@@ -10,6 +10,12 @@ body {
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 .text-muted {
     #{{ site.data.template.color.muted }};
 }
@@ -18,12 +24,16 @@ body {
     color: #{{ site.data.template.color.primary }};
 }
 
-p {
-    font-size: 14px;
+p, li {
+    font-size: 19px;
     line-height: 1.75;
 }
 
-p.large {
+p + p {
+    margin-top: 30px;
+}
+
+p.small {
     font-size: 16px;
 }
 
@@ -170,7 +180,7 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
-.navbar {
+.navbar, header {
     text-shadow: 1px 1px 5px #000;
 }
 

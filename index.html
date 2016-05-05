@@ -5,6 +5,16 @@ heading_text: The Cheese Factory
 call_to_action_text: Show Me the Cheese
 ---
 
+<header>
+	<div class="container">
+		<div class="intro-text">
+			<div class="intro-lead-in">{{ page.lead_in_text }}</div>
+			<div class="intro-heading">{{ page.heading_text }}</div>
+			<a href="#cheeses" class="page-scroll btn btn-xl">{{ page.call_to_action_text }}</a>
+		</div>
+	</div>
+</header>
+
 <!-- Portfolio Grid Section -->
 <section id="cheeses" class="bg-light-gray">
 	<div class="container">
@@ -20,7 +30,7 @@ call_to_action_text: Show Me the Cheese
 				<img src="{{ cheese.image_path }}" class="img-responsive img-centered" alt="A picture of our {{ cheese.title }}">
 				<div class="cheese-caption">
 					<h4>{{ cheese.title }}</h4>
-					<p class="text-muted">{{ cheese.description }}</p>
+					<p class="text-muted small">{{ cheese.description }}</p>
 				</div>
 			</div>
 		{% endfor %}
