@@ -9,4 +9,5 @@ permalink: pretty
 
 collections:
   cheeses:
+    hide_content: true
     output: false
